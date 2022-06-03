@@ -1,1 +1,23 @@
+body {
+    background-color: #97B1A6;
+}
+header {
+    color: #443742;
+    text-align: center;
+}
+#rules, #controls {
+    background-color: #D8B7AB;
+    color: #443742;
+    width: 45%;
+    border: 8px groove #443742;
+}
+#mainContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#gameWindow {
+    margin: auto;
+    margin-top: 5em;
+}
 
