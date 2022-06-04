@@ -4,12 +4,21 @@ body {
 header {
     color: #443742;
     text-align: center;
+    margin-bottom: 3em;
+    font-size: 20px;
+}
+/*Code to make the header have a color gradient when hovered over*/
+h1:hover {
+    background: -webkit-linear-gradient(90deg, #465D54, #8E5572);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #rules, #controls {
     background-color: #D8B7AB;
     color: #443742;
-    width: 45%;
+    width: 47%;
     border: 8px groove #443742;
+    border-radius: 3px;
 }
 #mainContent {
     display: flex;
@@ -19,5 +28,13 @@ header {
 #gameWindow {
     margin: auto;
     margin-top: 5em;
+    border: 8px solid #D8B7AB;
+    border-radius: 5px;
+    box-shadow: 7px 7px #443742;
 }
-
+h2 {
+    text-align: center;
+}
+p {
+    text-align: center;
+}
