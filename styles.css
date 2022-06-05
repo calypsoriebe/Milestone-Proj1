@@ -1,3 +1,7 @@
+/* font-family: 'Righteous', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+/* font-family: 'Poiret One',cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 body {
     background-color: #97B1A6;
 }
@@ -6,35 +10,56 @@ header {
     text-align: center;
     margin-bottom: 3em;
     font-size: 20px;
+    font-family: 'Righteous', cursive;
 }
-/*Code to make the header have a color gradient when hovered over*/
+/*Code to make the header have a color gradient when hovered over
+on line 15 it has it yellow underlined but if I define it the other way it wants it
+to be defined as, it will not work*/
 h1:hover {
     background: -webkit-linear-gradient(90deg, #465D54, #8E5572);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-#rules, #controls {
-    background-color: #D8B7AB;
-    color: #443742;
-    width: 47%;
-    border: 8px groove #443742;
-    border-radius: 3px;
 }
 #mainContent {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
+#rules, #controls {
+    background-color: #D8B7AB;
+    color: #443742;
+    width: 47%;
+    border: 8px dotted #443742;
+    border-radius: 3px;
+    font-family: 'Poiret One', cursive;
+}
+.topBoxHead{
+    text-decoration: underline;
+    text-align: center;
+}
+#rules p , #controls p{
+    text-align: center;
+    font-size: 20px;
+}
 #gameWindow {
-    margin: auto;
-    margin-top: 5em;
+    margin: 3em 5em;
     border: 8px solid #D8B7AB;
     border-radius: 5px;
     box-shadow: 7px 7px #443742;
 }
-h2 {
-    text-align: center;
+footer{
+    background-color: #D8B7AB;
+    border: 4px dotted #443742;
+    border-radius: 3px;
+    display: block;
+    font-family: 'Poiret One', cursive;
+    padding-left: 1em;
 }
-p {
-    text-align: center;
+footer h3 {
+    font-size: 25px;
+    text-decoration: underline;
+}
+.credits {
+    font-size: 20px;
+    text-decoration: underline;
 }
