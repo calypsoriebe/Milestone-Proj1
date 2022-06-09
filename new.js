@@ -1,7 +1,20 @@
-//for images
+/*I want to note that I did all this code, and I knew how to do it BUT I had to look at past activities 
+for some help a few times,because there were a few components I was messing up to have my code not work. 
+ */
 let browser = document.getElementById("body");
+//function for images
 
 function newImage(url) {
+  let image = document.createElement("img");
+  image.src = url;
+  image.style.position = "absolute";
+  image.style.height = "70px";
+  document.body.append(image);
+  return image;
+}
+
+//I redid the function above because I needed to be able to scale my images that were not the player
+function resize(url) {
   let image = document.createElement("img");
   image.src = url;
   image.style.position = "absolute";
@@ -74,15 +87,14 @@ function movement(element) {
     withArrowKeys: moveWithArrowKeys,
   };
 }
-
 //for character gif movement
 function movingPlayer(x, y) {
-  const element = newImage("assets/blue-char-idle.gif");
+  const element = newImage("assets/blue-char-idle-fixed.gif");
   element.style.zIndex = 1;
 
   function directionChange(direction) {
     if (direction === null) {
-      element.src = `assets/blue-char-idle.gif`;
+      element.src = `assets/blue-char-idle-fixed.gif`;
     }
     if (direction === "west") {
       element.src = `assets/blue-char-left.gif`;
@@ -104,31 +116,34 @@ function movingPlayer(x, y) {
     element: element,
   };
 }
-
-/*I want to note that I did all this code, and I knew how to do it BUT I had to look at past activities 
-for some help a few times,because there were a few components I was messing up to have my code not work. 
- */
 const player = movingPlayer(100, 110);
 
 //for non player images
-
-movement(newImage("assets/bush-set-1-1.png.png")).to(100, 200);
-movement(newImage("assets/bush-set-2-1.png.png")).to(200, 300);
-newImage("assets/camp-fire-1.png.png");
-newImage("assets/empty-bush-1.png.png");
-newImage("assets/green-house-1.png.png");
-newImage("assets/home-sign-1.png.png");
-newImage("assets/purpleTree-1.png.png");
-newImage("assets/red-home-1.png.png");
-newImage("assets/red-tree-1.png.png");
-newImage("assets/red-tree-1.png.png");
-newImage("assets/red-tree-1.png.png");
-newImage("assets/red-tree-1.png.png");
-newImage("assets/red-tree-1.png.png");
-newImage("assets/rock-sign-1.png.png");
-newImage("assets/trap-house-1.png.png");
-newImage("assets/treebunch1-1.png.png");
-newImage("assets/treebunch1-1.png.png");
-newImage("assets/treebunch2-1.png.png");
-newImage("assets/treebunch2-1.png.png");
-newImage("assets/your-house-1.png.png");
+//bottom bushes
+movement(resize("assets/empty-bush-1.png.png")).to(5, 12);
+movement(resize("assets/regular-bush-1.png.png")).to(150, 20);
+movement(resize("assets/regular-bush-1.png.png")).to(100, 20);
+movement(resize("assets/regular-bush-1.png.png")).to(100, 20);
+movement(resize("assets/regular-bush-1.png.png")).to(100, 20);
+//for square homes
+movement(resize("assets/red-square-house-1.png.png")).to(5, 80);
+movement(resize("assets/red-square-house-1.png.png")).to(150, 80);
+movement(resize("assets/red-square-house-1.png.png")).to(5, 280);
+movement(resize("assets/trapped-square-house-1.png (1).png")).to(150, 280);
+//for forrest
+movement(resize("assets/red-tree-1.png.png"));
+movement(resize("assets/red-tree-1.png.png"));
+movement(resize("assets/rock-sign-1.png.png"));
+movement(resize("assets/treebunch1-1.png.png"));
+movement(resize("assets/treebunch1-1.png.png"));
+movement(resize("assets/treebunch2-1.png.png"));
+movement(resize("assets/treebunch2-1.png.png"));
+//for your area
+movement(resize("assets/your-house-1.png.png"));
+movement(resize("assets/campfire-1.png.png"));
+movement(resize("assets/home-sign-1.png.png"));
+//purp tree
+movement(resize("assets/purpleTree-1.png.png"));
+movement(resize("assets/red-tree-1.png.png"));
+movement(resize("assets/red-tree-1.png.png"));
+movement(resize("assets/red-tree-1.png.png"));
