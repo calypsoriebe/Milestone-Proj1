@@ -1,6 +1,3 @@
-/*I want to note that I did all this code, and I knew how to do it BUT I had to look at past activities 
-for some help a few times,because there were a few components I was messing up to have my code not work. 
- */
 let browser = document.getElementById("body");
 //function for images
 
@@ -116,34 +113,38 @@ function movingPlayer(x, y) {
     element: element,
   };
 }
-const player = movingPlayer(100, 110);
+const player = movingPlayer(1160, 180);
 
 //for non player images
 //bottom bushes
-movement(resize("assets/empty-bush-1.png.png")).to(5, 12);
-movement(resize("assets/regular-bush-1.png.png")).to(150, 20);
-movement(resize("assets/regular-bush-1.png.png")).to(100, 20);
-movement(resize("assets/regular-bush-1.png.png")).to(100, 20);
-movement(resize("assets/regular-bush-1.png.png")).to(100, 20);
+movement(resize("assets/regular-bush-1.png.png")).to(5, 10);
+movement(resize("assets/empty-bush-1.png.png")).to(50, 10);
+movement(resize("assets/regular-bush-1.png.png")).to(100, 10);
+movement(resize("assets/regular-bush-1.png.png")).to(150, 10);
+movement(resize("assets/regular-bush-1.png.png")).to(200, 10);
 //for square homes
 movement(resize("assets/red-square-house-1.png.png")).to(5, 80);
 movement(resize("assets/red-square-house-1.png.png")).to(150, 80);
-movement(resize("assets/red-square-house-1.png.png")).to(5, 280);
-movement(resize("assets/trapped-square-house-1.png (1).png")).to(150, 280);
-//for forrest
-movement(resize("assets/red-tree-1.png.png"));
-movement(resize("assets/red-tree-1.png.png"));
-movement(resize("assets/rock-sign-1.png.png"));
-movement(resize("assets/treebunch1-1.png.png"));
-movement(resize("assets/treebunch1-1.png.png"));
-movement(resize("assets/treebunch2-1.png.png"));
-movement(resize("assets/treebunch2-1.png.png"));
+movement(resize("assets/red-square-house-1.png.png")).to(5, 250);
+movement(resize("assets/trapped-square-house-1.png (1).png")).to(150, 250);
+//for forest sign area
+movement(resize("assets/treebunch1-1.png.png")).to(85, 550);
+movement(resize("assets/red-tree-1.png.png")).to(250, 500);
+movement(resize("assets/red-tree-1.png.png")).to(20, 480);
+movement(resize("assets/rock-sign-1.png.png")).to(105, 480);
+//rest of back forest
+movement(resize("assets/treebunch2-1.png.png")).to(1150, 560);
+movement(resize("assets/treebunch1-1.png.png")).to(650, 560);
+movement(resize("assets/treebunch2-1.png.png")).to(880, 550);
+movement(resize("assets/treebunch1-1.png.png")).to(1000, 530);
+movement(resize("assets/treebunch1-1.png.png")).to(350, 550);
+movement(resize("assets/treebunch2-1.png.png")).to(500, 530);
 //for your area
-movement(resize("assets/your-house-1.png.png"));
-movement(resize("assets/campfire-1.png.png"));
-movement(resize("assets/home-sign-1.png.png"));
+movement(resize("assets/your-house-1.png.png")).to(1150, 200);
+movement(resize("assets/campfire-1.png.png")).to(1000, 300);
+movement(resize("assets/home-sign-1.png.png")).to(1100, 230);
 //purp tree
-movement(resize("assets/purpleTree-1.png.png"));
-movement(resize("assets/red-tree-1.png.png"));
-movement(resize("assets/red-tree-1.png.png"));
-movement(resize("assets/red-tree-1.png.png"));
+movement(resize("assets/purpleTree-1.png.png")).to(150, 80);
+movement(resize("assets/red-tree-1.png.png")).to(150, 80);
+movement(resize("assets/red-tree-1.png.png")).to(150, 80);
+movement(resize("assets/red-tree-1.png.png")).to(150, 80);
