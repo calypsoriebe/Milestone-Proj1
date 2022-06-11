@@ -10,12 +10,6 @@ header {
     font-size: 20px;
     font-family: 'Righteous', cursive;
 }
-/*There's nothing wrong with code below, not sure why underlined*/
-h1:hover {
-    background: -webkit-linear-gradient(90deg, #465D54, #8E5572);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
 #mainContent {
@@ -40,27 +34,8 @@ h1:hover {
     font-size: 20px;
 }
 /*Buttons for choosing character, will be taken out barring any complictions*/
-.buttons{
-    text-align: center;
-}
-button {
-    justify-content: space-between;
-    background-color: transparent;
-    border: none;
-    padding-left: 3.5em;
-    padding-right: 3.5em;
-}
-button:hover {
-    transform: scale(2.5);
-}
+
 /*for game window*/
-#gameSpot {
-    background-image: url("/assets/water_waves_48x48.gif");
-    width: 100%;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    height: 42em;
-}
 /*for footer*/
 footer{
     background-color: #D8B7AB;
