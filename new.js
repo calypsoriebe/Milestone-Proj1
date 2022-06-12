@@ -288,7 +288,7 @@ function bean() {
   movement(house).to(150, 310);
   house.addEventListener("click", () => {
     objective(
-      "CONGRATS!!! You found Bean! He was the last one to find and you wont! Game over! Thank you so much for playing my silly game, hopefully you enjoyed! :)"
+      "CONGRATS!!! You found Bean! He was the last one to find and you won! Game over! Thank you so much for playing my silly game, hopefully you enjoyed! :)"
     );
     newFriend("assets/bean-snore.gif", 140, 290);
   });
@@ -310,7 +310,7 @@ forPopUps(
 );
 forPopUps(
   "assets/empty-bush-1.png.png",
-  "You're almost at the end! This is your last and trickiest clue! Click on the house different from the rest to find your last friend!",
+  "You're almost at the end! This is your lastclue! Click on the house different from the rest to find your last friend!",
   50,
   10
 );
