@@ -14,8 +14,9 @@ I originally found my inspiration for my game in some of my favorite games, poke
 
 ## Controls
 
-WASD for movement\
+Arrow keys for movement\
 You can click on any buttons or prompts on the page\
+M key to turn the music on\
 Those should be all the controls for now :)\
 very simple! Enjoy!
 
